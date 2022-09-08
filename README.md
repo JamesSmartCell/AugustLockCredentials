@@ -1,10 +1,12 @@
 # AugustLockCredentials
-Fetches the credentials for your August/Yale lock for use with AugustESP32 library
+Fetches the credentials for your August/Yale lock for use with AugustESP32 library.
+
+Required: Rooted Android phone (will not work unless phone is rooted).
 
 Instructions for use:
 
 1. Setup the lock using the official August or Yale app (can be done on your rooted or normal phone)
-2. Install the official app on the rooted phone
+2. Install the official August/Yale app on the rooted phone
 3. Authenticate the app on the rooted phone to use the lock. Test it by locking/unlocking the lock
 4. Now switch off WiFi on the rooted phone
 5. Operate the lock a few times, which will fall back to the BlueTooth connection, creating credentials in the app's private data area
