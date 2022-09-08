@@ -21,3 +21,7 @@ In your ESP32 code you would initialise the AugustESP32 library instance like th
 See the example in the AugustESP32 library:
 
 https://github.com/JamesSmartCell/AugustESP32/tree/main/examples/Simple
+
+Install the app from the latest release here:
+
+https://github.com/JamesSmartCell/AugustLockCredentials/releases
