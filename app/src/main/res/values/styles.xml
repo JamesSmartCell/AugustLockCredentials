@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+<style name="TextIcon">
+    <item name="android:backgroundTint">@color/concrete</item>
+    <item name="android:maxLines">2</item>
+    <item name="android:padding">16dp</item>
+    <item name="android:textSize">17sp</item>
+    <item name="iconTint">?colorAccent</item>
+    <item name="android:layout_margin">20dp</item>
+    <item name="android:textColor">?android:textColorPrimary</item>
+</style>
+
+</resources>
