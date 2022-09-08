@@ -117,10 +117,8 @@ public class MainActivity extends AppCompatActivity {
             content = new String(buffer, 0, length);
             //Wait until reading finishes
             process.waitFor();
-        } catch (IOException e) {
-            Log.e("YOLESS", "IOException, " + e.getMessage());
-        } catch (InterruptedException e) {
-            Log.e("YOLESS", "InterruptedException, " + e.getMessage());
+        } catch (IOException | InterruptedException e) {
+             e.getMessage();
         }
 
         return content;
