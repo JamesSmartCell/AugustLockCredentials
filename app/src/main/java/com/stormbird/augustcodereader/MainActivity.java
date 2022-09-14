@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private CopyTextView addrText;
     private CopyTextView handshakeText;
     private CopyTextView handshakeIndexText;
+    private CopyTextView augustCode;
 
     private final String BlueToothAddress = "bluetoothAddress";
     private final String HandShakeKey = "handshakeKey";
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         addrText = findViewById(R.id.bluetooth_addr);
         handshakeText = findViewById(R.id.bluetooth_key);
         handshakeIndexText = findViewById(R.id.key_index);
+        augustCode = findViewById(R.id.key_code);
 
         //check if this is rooted
         if (!RootUtil.isDeviceRooted())
@@ -83,6 +85,14 @@ public class MainActivity extends AppCompatActivity {
         addrText.setText(getElement(BlueToothAddress, decodedText));
         handshakeText.setText(getElement(HandShakeKey, decodedText));
         handshakeIndexText.setText(getNumericElement(HandshakeKeyIndex, decodedText));
+
+        String constructorText = "AugustLock augustLock(\"[BLUETOOTH_ADDR]\", \"[HANDSHAKE_KEY]\", [HANDSHAKE_INDEX]);";
+
+        constructorText = constructorText.replace("[BLUETOOTH_ADDR]", getElement(BlueToothAddress, decodedText));
+        constructorText = constructorText.replace("[HANDSHAKE_KEY]", getElement(HandShakeKey, decodedText));
+        constructorText = constructorText.replace("[HANDSHAKE_INDEX]", getNumericElement(HandshakeKeyIndex, decodedText));
+
+        augustCode.setText(constructorText);
     }
 
     private String getElement(String elementCode, String data)
