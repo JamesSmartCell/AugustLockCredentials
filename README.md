@@ -1,6 +1,10 @@
 # AugustLockCredentials
 Fetches the credentials for your August/Yale lock for use with AugustESP32 library.
 
+You can install from PlayStore or using the APK in this repo, or build directly from this sourcecode.
+
+PlayStore: https://play.google.com/store/apps/details?id=com.stormbird.augustcodereader
+
 Required: Rooted Android phone (will not work unless phone is rooted).
 
 Instructions for use:
